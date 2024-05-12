@@ -1,0 +1,24 @@
+{
+    "model_args": {
+        "model_path": "/home/krank/Desktop/workspace_superhuman/TinyLlama-1.1B-Chat-v1.0",
+        "tokenizer_path": "/home/krank/Desktop/workspace_superhuman/TinyLlama-1.1B-Chat-v1.0",
+        "data_path": "Data/riddles-train.jsonl",
+        "model_max_length": 256
+    },
+    "training_args": {
+        "output_dir": "LORA_tinyllama_custom_k_q_",
+        "num_train_epochs": 5,
+        "per_device_train_batch_size": 4,
+        "per_device_eval_batch_size": 4,
+        "gradient_accumulation_steps": 8,
+        "evaluation_strategy": "no",
+        "save_steps": 2000,
+        "save_total_limit": 1,
+        "learning_rate": 2e-5,
+        "weight_decay": 0,
+        "warmup_ratio": 0.1,
+        "lr_scheduler_type": "linear",
+        "logging_steps": 1,
+        "optim": "adamw_torch"
+    }
+}
