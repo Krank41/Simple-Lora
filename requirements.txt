@@ -1,0 +1,6 @@
+accelerate==0.29.1
+transformers==4.40.2 
+einops==0.7.0
+datasets==2.18.0    
+torch==2.3.0
+torchvision==0.18.0
